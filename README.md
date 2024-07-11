@@ -34,3 +34,31 @@ python3 vault-k8s-sync-secret.py
 ## Limitations
 1. This project only supports the Cert authentication method.
 2. This project only supports the KV version 2 secrets engine.
+
+## Ref
+1. [Create vault secret engine (PKI)](https://developer.hashicorp.com/vault/docs/secrets/pki)
+2. [Create vault secret engine (KV2)](https://developer.hashicorp.com/vault/api-docs/secret/kv/kv-v2)
+3. [Create vault auth method (Cert)](https://developer.hashicorp.com/vault/docs/auth/cert)
+
+## Local test
+```sh
+# Run the Vault server and check the address, CA certificate file path, and token
+vault server -dev-tls
+
+# Log in to Vault
+
+# Create a PKI
+
+# Create a KV2
+
+# Create a role to access KV2
+
+# Enable the Cert auth method and apply the role created above
+
+# Create a configuration for the Vault agent
+
+# Run the Vault agent
+
+# Check the output file
+
+```
