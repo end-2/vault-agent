@@ -1,0 +1,13 @@
+vault:
+   url: https://localhost:8200
+   ca_cert: vault-ca-cert.pem
+   login_path: auth-method-path
+   login_name: auth-method-name
+   login_cert_path: cert.pem
+   login_key_path: key.pem
+   kv_mount: kv-secret-engine-mount-path
+   kv_path: kv-secret-engine-path
+
+output_file_path: output_file.json
+
+refresh_interval_secs: 10
